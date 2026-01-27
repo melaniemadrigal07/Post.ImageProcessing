@@ -1,9 +1,7 @@
-# HyPhy Analysis Toolkit
-Post-HyPhy pipeline for extracting and analyzing fungal hyphal network data, which can be used after running: https://github.com/AaronMoseley/SkeletonizationTool.git.
+# Counting Spores + Stacking Images
 
 This repository houses two core scripts:
 1. **countspores.R** - Counts spores per image using a fixed grid, then estimates **spores per nL** and **spores per µL**.
-2. **HyPhyPipeline.R** - extracts metadata and network traits from skeletonized images **and plots networks** by connecting points and building edges.
 3. **stackgray.py** - stacks separate R, G, and B grayscale channel outputs into a single multi-layer grayscale image for downstream processing.
 
 
@@ -21,12 +19,6 @@ This repository houses two core scripts:
    - The script stacks images across the three channels.
    - Outputs folders with stacked images for use in HyPhy.  
 
-3. **HyPhyPipeline.R**  
-   - Each subfolder ending in `skeleton_csvs/` must include:  
-     - `fileInfo.csv`  
-     - `network_points.csv`  
-     - `network_lines.csv`  
-     - `network_metadata.csv`
 
        
 ## Installation
